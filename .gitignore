@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+
+# production output
+dist/
+coverage/
+test-results/
+playwright-report/
+
+# local environment
+.env
+.env.*
+!.env.example
+
+# tooling
+*.tsbuildinfo
+.DS_Store
+Thumbs.db
+*.log
+.vite/
+.idea/
+.vscode/
