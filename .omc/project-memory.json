@@ -1,0 +1,202 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1785268427965,
+  "projectRoot": "c:\\temp_private\\ubtestingcom",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": ">=22.12.0",
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.2.8",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.8",
+        "category": "frontend"
+      },
+      {
+        "name": "@playwright/test",
+        "version": "1.62.0",
+        "category": "testing"
+      },
+      {
+        "name": "vite",
+        "version": "8.1.5",
+        "category": "build"
+      },
+      {
+        "name": "vitest",
+        "version": "4.1.10",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": "Node.js 22.12.0"
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": "npm test",
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "preview": "vite preview --host 0.0.0.0",
+      "typecheck": "tsc -b --pretty false",
+      "lint": "oxlint .",
+      "test": "vitest run",
+      "test:coverage": "vitest run --coverage",
+      "test:e2e": "playwright test"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "coverage": {
+      "path": "coverage",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1785268427898,
+      "keyFiles": [
+        "coverage-summary.json"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 5,
+      "lastAccessed": 1785268427899,
+      "keyFiles": [
+        "favicon.svg",
+        "index.html",
+        "robots.txt",
+        "site.webmanifest",
+        "sitemap.xml"
+      ]
+    },
+    "e2e": {
+      "path": "e2e",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1785268427899,
+      "keyFiles": [
+        "coming-soon.spec.ts"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 4,
+      "lastAccessed": 1785268427900,
+      "keyFiles": [
+        "favicon.svg",
+        "robots.txt",
+        "site.webmanifest",
+        "sitemap.xml"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 4,
+      "lastAccessed": 1785268427900,
+      "keyFiles": [
+        "App.test.tsx",
+        "App.tsx",
+        "index.css",
+        "main.tsx"
+      ]
+    },
+    "test-results": {
+      "path": "test-results",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1785268427900,
+      "keyFiles": []
+    },
+    "dist\\assets": {
+      "path": "dist\\assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1785268427901,
+      "keyFiles": [
+        "index-Ce-ssQGC.js",
+        "index-CoontH3v.css"
+      ]
+    },
+    "src\\test": {
+      "path": "src\\test",
+      "purpose": "Test files",
+      "fileCount": 1,
+      "lastAccessed": 1785268427901,
+      "keyFiles": [
+        "setup.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 1,
+      "lastAccessed": 1785268775388,
+      "type": "directory"
+    },
+    {
+      "path": "Dockerfile",
+      "accessCount": 1,
+      "lastAccessed": 1785268780000,
+      "type": "file"
+    },
+    {
+      "path": "nginx.conf",
+      "accessCount": 1,
+      "lastAccessed": 1785268788041,
+      "type": "file"
+    },
+    {
+      "path": "compose.yml",
+      "accessCount": 1,
+      "lastAccessed": 1785268788172,
+      "type": "file"
+    },
+    {
+      "path": ".dockerignore",
+      "accessCount": 1,
+      "lastAccessed": 1785268788233,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
