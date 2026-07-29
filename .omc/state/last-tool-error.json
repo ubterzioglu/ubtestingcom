@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"ls -la c:/temp_private/ubtestingcom\",\"description\":\"List repo root\"}",
-  "error": "Exit code 1\ntotal 292\ndrwxr-xr-x 1 ADESSO+baris-terzioglu ADESSO+baris-terzioglu      0 Jul 28 21:53 .\ndrwxr-xr-x 1 ADESSO+baris-terzioglu ADESSO+baris-terzioglu      0 Jul 28 21:34 ..\n-rw-r--r-- 1 ADESSO+baris-terzioglu ADESSO+baris-terzioglu    124 Jul 28 18:21 .dockerignore\ndrwxr-xr-x 1 ADESSO+baris-terzioglu ADESSO+baris-terzioglu      0 Jul 28 21:53 .git\ndrwxr-xr-x 1 ADESSO+baris-terzioglu ADESSO+baris-terzioglu      0 Jul 28 18:21 .github\n-rw-r--r-- 1 ADESSO+baris-terzioglu ADESSO+baris-te...",
-  "timestamp": "2026-07-28T19:59:36.618Z",
+  "tool_name": "PowerShell",
+  "tool_input_preview": "{\"command\":\"Set-Location 'c:\\\\temp_private\\\\ubtestingcom'; npx playwright test --config playwright.config.ts --test-dir 'C:\\\\Users\\\\BARIS-~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--temp-private-ubtestingcom...",
+  "error": "Exit code 1\nerror: unknown option '--test-dir'\r\n(Did you mean --test-list?)",
+  "timestamp": "2026-07-29T19:12:28.450Z",
   "retry_count": 1
 }

@@ -31,10 +31,18 @@ function SignalStage() {
       </div>
       <div className="orbit orbit-inner" />
       <div className="core">
-        <span className="core-index">UB / 01</span>
         <span className="core-pulse" />
-        <span className="core-word">Proof</span>
+        <img
+          className="core-logo"
+          src="/logo.webp"
+          alt=""
+          width={384}
+          height={384}
+          decoding="async"
+        />
       </div>
+      <span className="core-index">UB / 01</span>
+      <span className="core-word">Proof</span>
       <span className="coordinate coordinate-top">52.5200° N</span>
       <span className="coordinate coordinate-bottom">13.4050° E</span>
       <span className="axis axis-x" />

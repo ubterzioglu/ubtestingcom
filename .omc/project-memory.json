@@ -168,6 +168,18 @@
   },
   "hotPaths": [
     {
+      "path": "src\\index.css",
+      "accessCount": 4,
+      "lastAccessed": 1785352396318,
+      "type": "file"
+    },
+    {
+      "path": "src\\App.tsx",
+      "accessCount": 2,
+      "lastAccessed": 1785352257025,
+      "type": "file"
+    },
+    {
       "path": "",
       "accessCount": 1,
       "lastAccessed": 1785268775388,
@@ -195,6 +207,36 @@
       "path": ".dockerignore",
       "accessCount": 1,
       "lastAccessed": 1785268788233,
+      "type": "file"
+    },
+    {
+      "path": "logo.png",
+      "accessCount": 1,
+      "lastAccessed": 1785352100455,
+      "type": "file"
+    },
+    {
+      "path": "src\\App.test.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1785352130211,
+      "type": "file"
+    },
+    {
+      "path": "playwright.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1785352301977,
+      "type": "file"
+    },
+    {
+      "path": "test-results\\stage.png",
+      "accessCount": 1,
+      "lastAccessed": 1785352376020,
+      "type": "file"
+    },
+    {
+      "path": "test-results\\full.png",
+      "accessCount": 1,
+      "lastAccessed": 1785352425251,
       "type": "file"
     }
   ],
