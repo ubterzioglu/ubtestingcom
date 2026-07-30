@@ -1,16 +1,40 @@
 {
-  "name": "UB Testing",
-  "short_name": "UB",
-  "description": "UB Testing digital product studio",
+  "id": "/",
+  "name": "UB Testing — Digital product studio",
+  "short_name": "UB Testing",
+  "description": "An independent digital product studio in Berlin designing, testing, and sharpening digital products.",
+  "lang": "en",
+  "dir": "ltr",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#090909",
   "theme_color": "#090909",
+  "categories": ["business", "design"],
   "icons": [
     {
       "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

@@ -17,6 +17,42 @@ npm run dev
 
 Open `http://localhost:5173`.
 
+## Routes
+
+Routing is handled by a small client-side router in `src/Router.tsx`; unknown paths fall back to
+the coming-soon page.
+
+| Path          | Page                                                            |
+| ------------- | --------------------------------------------------------------- |
+| `/`           | Coming-soon experience (`src/App.tsx`)                          |
+| `/ubtesting1` | Weiterbildung ve İş Birliği Konsepti (`src/pages/WeiterbildungPage.tsx`) |
+
+The `/ubtesting1` content lives in `src/pages/weiterbildungContent.ts` and mirrors
+`doc/weiterbildung_isbirligi.html` verbatim.
+
+## SEO and GEO
+
+Search engines and AI answer engines are served from three layers:
+
+- **Static head** — `index.html` carries the full home-page metadata (title, description,
+  canonical, robots, Open Graph, Twitter card, `geo.region`/`ICBM` for Berlin, and a
+  `schema.org` `@graph` with `Organization`, `WebSite`, and `WebPage`). Crawlers that never run
+  scripts still get everything.
+- **Per-route head** — `src/seo.ts` holds one `RouteSeo` record per route and rewrites the
+  static tags on navigation; `src/Router.tsx` applies it. Add a route there and its title,
+  description, canonical, robots, and social tags follow.
+- **Server** — `nginx.conf` maps every request to an `X-Robots-Tag`, so non-indexable routes are
+  excluded even for crawlers that ignore the DOM.
+
+Crawler-facing files live in `public/`: `robots.txt` (explicitly opts the major AI crawlers in),
+`sitemap.xml`, `llms.txt`, and `site.webmanifest`.
+
+`public/og-image.png` (1200×630) and the PNG icons are generated brand placeholders — replace
+them with designed artwork when it exists; the metadata already points at the right paths.
+
+After changing the domain, update `SITE_URL` in `src/seo.ts` plus the absolute URLs in
+`index.html`, `public/robots.txt`, and `public/sitemap.xml`.
+
 ## Quality checks
 
 ```bash

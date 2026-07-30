@@ -1,4 +1,24 @@
+# The public site is open to every crawler, including AI answer engines.
 User-agent: *
 Allow: /
+Disallow: /ubtesting1
+Disallow: /healthz
+
+# Explicit opt-in for the AI crawlers and answer engines that honour these tokens.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: CCBot
+Allow: /
+Disallow: /ubtesting1
+Disallow: /healthz
 
 Sitemap: https://ubtesting.com/sitemap.xml

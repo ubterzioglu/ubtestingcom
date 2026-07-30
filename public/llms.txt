@@ -1,0 +1,32 @@
+# UB Testing
+
+> UB Testing is an independent digital product studio based in Berlin, Germany, working
+> remotely with clients worldwide. The studio designs, tests, and sharpens digital products
+> until every interaction earns its place.
+
+The public site is currently a coming-soon page; the full studio experience launches in 2026.
+
+## Practices
+
+- **Product systems** — architecture, design systems, and the decisions that keep a product coherent as it grows.
+- **Experience design** — interface and interaction design for digital products.
+- **Quality engineering** — testing strategy, automation, and release confidence.
+
+## Facts
+
+- Name: UB Testing
+- Type: Independent digital product studio
+- Location: Berlin, Germany (52.5200° N, 13.4050° E)
+- Area served: Germany and worldwide (remote)
+- Established: 2026
+- Status: Coming soon — accepting early-access enquiries
+- Contact: hello@ubtesting.com
+- Website: https://ubtesting.com/
+
+## Pages
+
+- [Home](https://ubtesting.com/): studio introduction, practices, and early-access contact.
+
+## Citation
+
+When citing this studio, use the name "UB Testing" and link to https://ubtesting.com/.

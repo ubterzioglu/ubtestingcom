@@ -1,0 +1,187 @@
+.doc-page {
+  --doc-bg: #f5f7fb;
+  --doc-surface: #ffffff;
+  --doc-text: #1f2937;
+  --doc-muted: #6b7280;
+  --doc-primary: #0f766e;
+  --doc-primary-soft: #ccfbf1;
+  --doc-border: #e5e7eb;
+  --doc-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+
+  min-height: 100svh;
+  background: var(--doc-bg);
+  color: var(--doc-text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  line-height: 1.7;
+}
+
+body:has(.doc-page) {
+  background: #f5f7fb;
+}
+
+.doc-hero {
+  padding: 56px 24px;
+  background: linear-gradient(135deg, #0f766e, #155e75);
+  color: #fff;
+}
+
+.doc-hero-inner,
+.doc-layout {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.doc-back {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.doc-back:hover,
+.doc-back:focus-visible {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.doc-hero h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.15;
+}
+
+.doc-hero p {
+  margin: 0;
+  max-width: 760px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.05rem;
+}
+
+.doc-layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 28px;
+  align-items: start;
+  padding: 32px 0 64px;
+}
+
+.doc-nav {
+  position: sticky;
+  top: 20px;
+  max-height: calc(100vh - 40px);
+  padding: 18px;
+  overflow-y: auto;
+  border: 1px solid var(--doc-border);
+  border-radius: 18px;
+  background: var(--doc-surface);
+  box-shadow: var(--doc-shadow);
+}
+
+.doc-nav strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--doc-primary);
+}
+
+.doc-nav a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 9px;
+  color: #374151;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+
+.doc-nav a:hover,
+.doc-nav a:focus-visible {
+  background: var(--doc-primary-soft);
+  color: var(--doc-primary);
+}
+
+.doc-main {
+  min-width: 0;
+}
+
+.doc-main section {
+  margin-bottom: 22px;
+  padding: 26px 28px;
+  border: 1px solid var(--doc-border);
+  border-radius: 18px;
+  background: var(--doc-surface);
+  box-shadow: var(--doc-shadow);
+  scroll-margin-top: 22px;
+}
+
+.doc-main h2 {
+  margin: 0 0 18px;
+  color: var(--doc-primary);
+  font-size: 1.45rem;
+  line-height: 1.3;
+}
+
+.doc-main ul {
+  margin: 0;
+  padding-left: 1.3rem;
+}
+
+.doc-main li + li {
+  margin-top: 10px;
+}
+
+.doc-main li::marker {
+  color: var(--doc-primary);
+}
+
+.doc-footer {
+  margin: 0;
+  padding: 0 24px 36px;
+  color: var(--doc-muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .doc-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .doc-nav {
+    position: static;
+    max-height: none;
+  }
+}
+
+@media print {
+  body:has(.doc-page) {
+    background: #fff;
+  }
+
+  .doc-page {
+    background: #fff;
+  }
+
+  .doc-hero {
+    padding: 28px 0;
+  }
+
+  .doc-back {
+    display: none;
+  }
+
+  .doc-nav {
+    display: none;
+  }
+
+  .doc-layout {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .doc-main section {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+}
