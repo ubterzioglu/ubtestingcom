@@ -1,7 +1,0 @@
-{
-  "tool_name": "PowerShell",
-  "tool_input_preview": "{\"command\":\"Set-Location 'c:\\\\temp_private\\\\ubtestingcom'; npx playwright test --config playwright.config.ts --test-dir 'C:\\\\Users\\\\BARIS-~1\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\c--temp-private-ubtestingcom...",
-  "error": "Exit code 1\nerror: unknown option '--test-dir'\r\n(Did you mean --test-list?)",
-  "timestamp": "2026-07-29T19:12:28.450Z",
-  "retry_count": 1
-}
